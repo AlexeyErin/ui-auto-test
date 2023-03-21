@@ -8,5 +8,4 @@ public interface Page {
 
     Map<String, SelenideElement> getElements();
 
-    String returnSomeText();
 }

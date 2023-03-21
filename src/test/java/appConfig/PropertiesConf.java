@@ -11,8 +11,8 @@ import org.springframework.context.annotation.PropertySources;
 @EnableConfigurationProperties
 @ConfigurationProperties(ignoreInvalidFields = true)
 @Data
-@PropertySources(@PropertySource(value = "classpath:resource/properties"))
-public class propertiesConf {
+@PropertySources(@PropertySource(value = "classpath:properties/application-spring-test-ui.properties", ignoreResourceNotFound = true))
+public class PropertiesConf {
     private Web web;
 
     @Data
