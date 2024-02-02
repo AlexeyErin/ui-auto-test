@@ -18,6 +18,7 @@ public class DriverConfig {
     @Qualifier("chrome")
     @Bean
     public WebDriver chromeWebDriver(){
+        String a;
         WebDriverManager.chromedriver().setup();
         ChromeDriver driver = new ChromeDriver();
         WebDriverRunner.setWebDriver(driver);
